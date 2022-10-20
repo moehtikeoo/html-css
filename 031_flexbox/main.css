@@ -1,0 +1,83 @@
+header {
+  background-color: red;
+  text-align: center;
+  padding: 1px;
+  margin: 0 10px;
+}
+
+section {
+  display: flex;
+}
+
+.s2 {
+  flex-direction: column;
+}
+
+.s3 {
+  flex-flow: row-reverse wrap;
+  /* flex-direction: row-reverse;
+  flex-wrap: wrap; */
+}
+
+article {
+  background-color: aqua;
+  margin: 10px;
+  padding: 10px;
+}
+
+.a3 {
+    flex: 200px;
+}
+
+.a3:nth-of-type(8) {
+  flex: 300px;
+}
+
+.a4 {
+  flex: 1;
+}
+
+.a4:nth-of-type(3) {
+  flex: 2;
+}
+
+button {
+  margin: 0 7px;
+  font-size: 18px;
+  line-height: 1.5;
+  width: 22%;
+}
+
+.but {
+  display: block;
+  width: 97.2%;
+  margin-top: 10px;
+}
+
+.div2 {
+  height: 100px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.but1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  width: 14%;
+}
+
+/* override aligh-items behaviour for individual flex items */
+/* button:first-child {
+  align-self: flex-end;
+} */
+
+button:first-child {
+  order: 1;
+}
+
+button:nth-child(4) {
+  order: -1;
+}
